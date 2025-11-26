@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form for python course</title>
+    <style>
+      html {
+        background-image: url("pexels-iriser-1366957.jpg");
+      }
+      @font-face {
+        font-family: "thapa";
+        src: url("cash_paper/Cash Paper.otf");
+      }
+      @font-face {
+        font-family: "thp";
+        src: url("carnivalee_freakshow/Carnevalee Freakshow.ttf");
+      }
+      header {
+        font-size: 30px;
+        text-align: center;
+        place-items: center;
+        padding-left: 20px;
+        padding-top: 20px;
+        color: rgb(134, 136, 124);
+
+        background-repeat: repeat -2px;
+        font-family: "thp";
+        font-variant: small-caps;
+      }
+      header:hover {
+        transform: scale(1.03);
+      }
+      nav {
+        padding-top: 30px;
+        padding-left: 50%;
+        font-size: 35px;
+        font-family: "thapa";
+        color: aliceblue;
+      }
+      main {
+        padding: top 50px;
+        padding-left: 50%;
+      }
+      section {
+        content: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        width: 300px;
+        height: 300px;
+        background: linear-gradient(20deg, green, pink);
+        border-radius: 60px;
+      }
+      label {
+        font-family: "thp";
+        font-size: 30px;
+      }
+      input {
+        width: auto;
+        height: 30px;
+        border-radius: 10px;
+        background: linear-gradient(24deg, rgb(34, 79, 34), rgb(146, 125, 129));
+        color: rgb(154, 161, 144);
+      }
+      input:hover {
+        transform: scale(1.08);
+      }
+      #submit {
+        padding-right: 150px;
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>The Complete Python Programming Bootcamp</header>
+    <nav>Sign up</nav>
+    ,
+    <main>
+      <form action="#">
+        <section>
+          <div>
+            <label for="username"> full name: </label>
+            <input
+              type="text"
+              name="username"
+              autofocus
+              id="username"
+              placeholder="Username"
+            />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email" />
+          </div>
+          <div>
+            <div></div>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Password"
+            />
+          </div>
+          <label for="submit"></label>
+          <input type="submit" id="submit" value="Login" />
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
